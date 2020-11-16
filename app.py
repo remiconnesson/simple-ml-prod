@@ -3,10 +3,7 @@ import joblib
 import pandas as pd
 from flask import Flask, request, jsonify, make_response
 from pathlib import Path
-
-# les fonctions définies dans la pipeline
-def extraire_la_première_lettre(serie):
-  return pd.DataFrame(serie.str[0])
+from fonctions_maison import extraire_la_première_lettre
 
 # Load Model
 model_path = Path('.') / 'model' / 'titanic.model'
