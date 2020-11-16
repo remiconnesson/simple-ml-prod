@@ -32,5 +32,5 @@ def predict():
 def index():
     return "<h1>Welcome to our SIMPLE API!! use /predict to start predicting</h1>"
 
-
-app.run(host='0.0.0.0', port=8000)
+if __name__ == '__main__':
+    app.run()
