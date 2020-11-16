@@ -30,6 +30,10 @@ def predict():
   result = model.predict(df)[0]
   return (str(result), 201)
 
+# A welcome message to test our server
+@app.route('/')
+def index():
+    return "<h1>Welcome to our SIMPLE API!! use /predict to start predicting</h1>"
 
 
 app.run(host='0.0.0.0', port=8000)
