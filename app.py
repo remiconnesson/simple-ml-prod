@@ -33,4 +33,4 @@ def index():
     return "<h1>Welcome to our SIMPLE API!! use /predict to start predicting</h1>"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(threaded=True)
